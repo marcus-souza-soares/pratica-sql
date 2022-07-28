@@ -16,4 +16,5 @@ SELECT MAX(j.salary) as "maximumSalary",  r.name as role
 FROM jobs j
 JOIN roles r ON
 r.id = j."roleId"
+AND j.active = true
 GROUP BY role;
